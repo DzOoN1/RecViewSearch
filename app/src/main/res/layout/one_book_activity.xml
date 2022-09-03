@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CV_parent"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="7dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/notExpandedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/CV_image"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/balanar" />
+
+            <TextView
+                android:id="@+id/CV_txt_BookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CV_image"
+                android:layout_centerHorizontal="true"
+                android:hint="Book Name"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/CV_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CV_image"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@id/notExpandedLayout">
+
+            <TextView
+                android:id="@+id/CV_txt_Author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Author"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/CV_txt_Pages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Pages"
+                android:textSize="20sp"
+                android:layout_below="@id/CV_txt_Author"/>
+            <TextView
+                android:id="@+id/CV_txt_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Description"
+                android:textSize="20sp"
+                android:layout_below="@id/CV_txt_Pages"/>
+
+            <ImageView
+                android:id="@+id/CV_up_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                android:layout_below="@id/CV_txt_Pages"
+                android:layout_alignParentEnd="true"/>
+
+            <ImageView
+                android:id="@+id/CV_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_restore_from_trash_24"
+                android:layout_below="@id/CV_up_arrow"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

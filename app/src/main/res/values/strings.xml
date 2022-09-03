@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Knjizara</string>
+    <string name="all_books">All Books</string>
+    <string name="read_books">Read Books</string>
+    <string name="not_read_books">Not Read Books</string>
+    <string name="about">Google</string>
+    <string name="book_activity">Knjiga</string>
+</resources>

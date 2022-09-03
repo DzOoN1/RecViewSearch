@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <ImageView
+        android:id="@+id/BA_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/balanar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/pola"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_AddToReadBooks"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:text="Add to Read"
+        app:layout_constraintLeft_toLeftOf="@id/pola"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_AddToNotReadBooks"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Add to Not Read"
+        app:layout_constraintLeft_toLeftOf="@id/pola"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_AddToReadBooks" />
+
+    <TextView
+        android:id="@+id/txt_BookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Book Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/BA_imageView"
+        app:layout_constraintStart_toStartOf="@id/BA_imageView"
+        app:layout_constraintTop_toBottomOf="@id/BA_imageView" />
+
+    <TextView
+        android:id="@+id/txt_Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Author"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_BookName"
+        app:layout_constraintStart_toStartOf="@id/txt_BookName"
+        app:layout_constraintTop_toBottomOf="@id/txt_BookName" />
+
+    <TextView
+        android:id="@+id/txt_Pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Pages"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_Author"
+        app:layout_constraintStart_toStartOf="@id/txt_Author"
+        app:layout_constraintTop_toBottomOf="@id/txt_Author" />
+
+    <TextView
+        android:id="@+id/txt_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Description"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_Pages"
+        app:layout_constraintStart_toStartOf="@id/txt_Pages"
+        app:layout_constraintTop_toBottomOf="@id/txt_Pages" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+</androidx.constraintlayout.widget.ConstraintLayout>
